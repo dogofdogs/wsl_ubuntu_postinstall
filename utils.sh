@@ -13,3 +13,4 @@ is_user_root () {
 echoerr() {
     echo "$@" 1>&2;
 }
+
