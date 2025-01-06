@@ -14,6 +14,8 @@ bash startup.sh
     - lazygit
 - programming langs to include
     - php + laravel
+    - python
+    - javascript (nodejs/npm)
     - c/c++
     - java
     - C#
