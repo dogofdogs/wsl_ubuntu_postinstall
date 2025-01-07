@@ -21,6 +21,10 @@ fi
 
 echo "your not running in root we can continue"
 
+###################################
+#    update and upgrade system    #
+###################################
+sudo apt upgrade && sudo apt update
 #################################
 #    installing vim and nvim    #
 #################################
@@ -37,13 +41,15 @@ sudo apt install neovim vim
 # installs things i need to install docker
 sudo apt install --no-insall-recommends apt-transport-https ca-certificates curl gnupg2t
 
-echo "deb [arch=amd64] htps://download.docker.com/linux/${ID} ${VERSION_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/docker.list
-#
+curl -fsSL https://download.docker.com/linux/${ID}/gpg | sudo tee /etc/apt/trusted.gpg.d/docker.asc
+
+echo "deb [arch=amd64] https://download.docker.com/linux/${ID} ${VERSION_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/docker.list
+
+# updates the docker list thing
 sudo apt update && sudo apt upgrade
 
-#installs all the docker stuff
-sudo apt-get install dockr-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugine
-
+# installs all the docker stuff
+sudo apt install docker-ce docker-ce-cli containerd.io
 ################################
 #    installing shell tools    #
 ################################
