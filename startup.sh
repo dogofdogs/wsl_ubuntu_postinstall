@@ -56,3 +56,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 echo "installing shell tools"
 sudo apt install grep fzf btop stow jq nnn ripgrep 
 
+#####################################
+#    install lazy git and docker    #
+#####################################
+sudo bash ./lazydocker.sh
