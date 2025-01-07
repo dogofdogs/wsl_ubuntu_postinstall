@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # allow specifying different destination directory
 DIR="${DIR:-"$HOME/.local/bin"}"

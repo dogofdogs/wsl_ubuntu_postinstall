@@ -60,3 +60,4 @@ sudo apt install grep fzf btop stow jq nnn ripgrep
 #    install lazy git and docker    #
 #####################################
 sudo bash ./lazydocker.sh
+sudo bash ./lazygit.sh
