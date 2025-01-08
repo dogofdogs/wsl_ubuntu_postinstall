@@ -25,6 +25,7 @@ echo "your not running in root we can continue"
 #    update and upgrade system    #
 ###################################
 sudo apt upgrade && sudo apt update
+
 #################################
 #    installing vim and nvim    #
 #################################
@@ -54,8 +55,8 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 #    installing shell tools    #
 ################################
 echo "installing shell tools"
-sudo apt install grep fzf btop stow jq nnn ripgrep 
-
+sudo apt install grep fzf btop stow jq nnn  
+sudo apt-get install ripgrep
 #####################################
 #    install lazy git and docker    #
 #####################################
