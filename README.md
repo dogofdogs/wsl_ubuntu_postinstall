@@ -9,9 +9,6 @@
 bash startup.sh 
 ```
 ## TODO
-- apps to include
-    - lazydocker
-    - lazygit
 - programming langs to include
     - php + laravel
     - python
